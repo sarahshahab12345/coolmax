@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
+import LogoImage from "/src/assets/images/logo.png"; 
 
 function MobileNavigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ function MobileNavigation() {
 
       <div className="lg:hidden flex justify-between items-center bg-white border-b border-gray-300 py-4 px-4">
         <div className="flex justify-center items-center w-full">
-          <img src="/images/logo.png" alt="logo" className="w-32" />
+          <img src={LogoImage} alt="logo" className="w-32" /> 
         </div>
 
         <div className="flex items-center">
@@ -69,7 +70,7 @@ function MobileNavigation() {
 
       <div className="hidden lg:flex justify-between items-center bg-white border-b border-gray-300 py-4 px-4">
         <div className="flex items-center">
-          <img src="/images/logo.png" alt="logo" className="w-32" />
+          <img src={LogoImage} alt="logo" className="w-32" /> 
         </div>
 
         <div className="flex space-x-8">

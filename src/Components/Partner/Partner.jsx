@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import MetaLogo from "../../assets/images/MetaLogo.png";
+import SMetaLogo from "../../assets/images/s-metalogo.png";
 
 function Partner() {
   const [formData, setFormData] = useState({
@@ -24,11 +26,7 @@ function Partner() {
     <div className="container mx-auto py-12">
       <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col lg:flex-row justify-between items-start lg:items-center min-h-[400px] lg:w-4/5 mx-auto">
         <div className="w-full lg:w-2/3 mb-6 lg:mb-0">
-          <img
-            className="metaLogo mr-4 mb-2"
-            src="/images/MetaLogo.png"
-            alt="Meta Logo"
-          />
+          <img className="metaLogo mr-4 mb-2" src={MetaLogo} alt="Meta Logo" />
           <h2 className="text-3xl mb-4 flex items-center font-semibold font-poppins text-customBlue2">
             Partner with Us
           </h2>
@@ -36,11 +34,7 @@ function Partner() {
             Have any questions? Feel free to contact us <br /> at
             help@coolmax.com <br /> or fill out the form.
           </p>
-          <img
-            className="s-metaLogo mr-4"
-            src="/images/s-metalogo.png"
-            alt="Meta Logo"
-          />
+          <img className="s-metaLogo mr-4" src={SMetaLogo} alt="Meta Logo" />
         </div>
 
         <div className="p-4 w-full lg:w-2/5">

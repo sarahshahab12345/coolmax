@@ -2,6 +2,8 @@ import React from "react";
 import BlogCards from "../BlogCards/BlogCards";
 import { FaStar } from "react-icons/fa";
 
+import blogImage from "/src/assets/images/blogimg.png";
+
 function BlogContent() {
   const blogPosts = [
     {
@@ -11,7 +13,7 @@ function BlogContent() {
       author: "John Adam",
       description:
         "The Commercial Vehicle Safety act of 1986 established a set of regulations in the United States for commercial motor vehicle operators...",
-      image: "/images/blogimg.png",
+      image: blogImage, 
       featured: true,
     },
     {
@@ -21,7 +23,7 @@ function BlogContent() {
       author: "John Adam",
       description:
         "The Commercial Vehicle Safety act of 1986 established a set of regulations in the United States for commercial motor vehicle operators...",
-      image: "/images/blogimg.png",
+      image: blogImage, 
       featured: false,
     },
     {
@@ -31,7 +33,7 @@ function BlogContent() {
       author: "John Adam",
       description:
         "The Commercial Vehicle Safety act of 1986 established a set of regulations in the United States for commercial motor vehicle operators...",
-      image: "/images/blogimg.png",
+      image: blogImage, 
       featured: false,
     },
   ];

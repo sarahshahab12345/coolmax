@@ -1,6 +1,8 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaPhone } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
+import Logo from '/src/assets/images/logo.png'; 
+import MIP from '/src/assets/images/MIP.png';  
 
 const FooterComponent = () => {
   return (
@@ -8,14 +10,14 @@ const FooterComponent = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
           <div className="flex flex-col items-center md:items-start mb-4 md:mb-0 w-full md:w-1/3">
-            <img src="/images/logo.png" alt="" className="mb-4 w-28" />
+            <img src={Logo} alt="Logo" className="mb-4 w-28" /> 
             <p className="text-xs text-center md:text-left text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit,
               sed do eiusmod tempor incididunt ut labore <br /> et dolore magna
               aliqua.
             </p>
             <div className="w-20 mt-4">
-              <img src="/images/MIP.png" alt="" />
+              <img src={MIP} alt="MIP" /> 
             </div>
           </div>
 

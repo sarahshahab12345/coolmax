@@ -1,14 +1,15 @@
 import React from "react";
+import BlogBanner from "/src/assets/images/BlogBanner.png"; 
 
 function BlogHeader() {
   return (
-    <div
-      className="bg-cover bg-center py-52 md:py-40 sm:py-24"
-      style={{
-        backgroundImage: 'url("/images/BlogBanner.png")',
-      }}
-    >
-      <div className="container mx-auto text-left px-4">
+    <div className="relative py-52 md:py-40 sm:py-24">
+      <img
+        src={BlogBanner}
+        alt="Blog Banner"
+        className="absolute top-0 left-0 w-full h-full object-cover object-center z-[-1]"
+      />
+      <div className="container mx-auto text-left px-4 relative z-10">
         <h1 className="text-6xl md:text-5xl sm:text-4xl font-bold mb-4 text-customBlue1 font-poppins">
           Blogs
         </h1>

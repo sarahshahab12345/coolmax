@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaTwitter, FaFacebookF } from "react-icons/fa";
+import LogoImage from "/src/assets/images/logo.png"; 
 
 function NavigationBar() {
   return (
@@ -14,7 +15,7 @@ function NavigationBar() {
       <nav className="bg-white border-b border-gray-300">
         <div className="container mx-auto flex justify-between items-center py-4">
           <div className="w-32">
-            <img src="/images/logo.png" alt="logo" />
+            <img src={LogoImage} alt="logo" />
           </div>
 
           <ul className="flex font-bold space-x-6 text-md text-customGrey4 font-poppins items-center">

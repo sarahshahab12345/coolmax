@@ -1,5 +1,6 @@
 import React from "react";
 import { MdOutlineFileDownload } from "react-icons/md";
+import MetaLogo from "/src/assets/images/MetaLogo.png"; 
 
 function MediaKit() {
   return (
@@ -9,7 +10,7 @@ function MediaKit() {
           <h2 className="text-3xl font-light mb-4 flex items-center text-customBlue3 font-poppins">
             <img
               className="metaLogo mr-4"
-              src="/images/MetaLogo.png"
+              src={MetaLogo} 
               alt="Meta Logo"
             />
             Media Kit
